@@ -1,17 +1,8 @@
-<h1><%=link_to "Logo", projects_path %></h1>
+<%= render 'shared/header' %>
 
-
-<p>This is sample text</p>
-
-<div id="slideshow">
- <div class="rslides_container">
-      <ul class="rslides" id="slider1">
-       	<li><%= image_tag('index/006.jpg', alt: "")%></li>
- 		<li><%= image_tag('index/005.jpg', alt: "")%></li>
-  		<li><%= image_tag('index/007.jpg', alt: "")%></li>
-  		<li><%= image_tag('index/008.jpg', alt: "")%></li>
- 		<li><%= image_tag('index/009.jpg', alt: "")%></li>
-  		<li><%= image_tag('index/010.jpg', alt: "")%></li>
-      </ul>
+	<div id="cf4a" class="shadow">
+ 		<%= image_tag('index/009.jpg', alt: "", class: 'slide')%>
+ 		<%= image_tag('index/008.jpg', alt: "", class: 'slide')%>
+ 		<%= image_tag('index/010.jpg', alt: "", class: 'slide')%>
+ 		<%= image_tag('index/002.jpg', alt: "", class: 'slide')%>
     </div>
-</div>
