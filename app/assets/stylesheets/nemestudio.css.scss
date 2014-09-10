@@ -1,40 +1,8 @@
-/**
-//** Media
-//**
-//********************************************************/
-
-@media (max-width: 320px) {
-     #header {
-    z-index: 2;
-    position: relative;
-  }
-
-  #header img {
-    padding: 25px 50px;
-    width: auto;
-    height: auto;
-  }
-}
-
-@media (max-width: 320px) and (orientation: landscape){
-     #header {
-    z-index: 2;
-    position: relative;
-  }
-
-  #header img {
-    padding: 25px 50px;
-    width: 50%;
-    height: auto;
-  }
-}
-
 
 /**
 //** Site
 //**
 //********************************************************/
-
 .body_container {
   text-align: center;
   margin: auto;
@@ -241,3 +209,4 @@ html {
   -o-animation-delay: 0;
   animation-delay: 0;
 }
+

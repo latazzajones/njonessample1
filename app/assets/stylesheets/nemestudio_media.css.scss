@@ -1,0 +1,46 @@
+/**
+//** Media
+//**
+//********************************************************/
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+#header {
+  z-index: 300;
+  position: fixed;
+}
+
+#header img {
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 150px;
+  height: auto;
+}
+  #cf4a img {
+  position: none; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: 80% 0 0 0; 
+  min-width: 100%;
+  min-height: 30%;
+  }
+}
+
+@media only screen and (max-device-width: 480px) and (orientation: landscape){
+ #header {
+     
+    }
+
+  #header img {
+
+  }
+
+  #cf4a {
+
+  }
+
+  #cf4a img {
+
+   }
+}
