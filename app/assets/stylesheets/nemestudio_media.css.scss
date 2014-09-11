@@ -3,17 +3,27 @@
 //**
 //********************************************************/
 
-@media screen and (max-device-width: 480px) and (orientation: portrait) {
+@media screen and (max-device-width: 480px) and (orientation: portrait) { /* for iphone */
 #header {
-  z-index: 300;
-  position: fixed;
+  position: none;
+  margin-left: 42%
 }
-
-#header img {
-  padding-left: 50px;
-  padding-right: 50px;
-  width: 150px;
-  height: auto;
+#header img{ 
+   max-width: 100%;
+   height: auto;
+}
+nav {
+  position: relative;
+  padding: 0;
+  margin-right: 42%;
+  margin-left: 31%;
+}
+ul {
+  display: inline-block;
+  text-align: center;
+  list-style: none;
+  float: left;
+  width: 100%;
 }
   #cf4a img {
   position: none; 
