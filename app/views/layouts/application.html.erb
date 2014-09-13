@@ -10,6 +10,21 @@
  <meta name="viewport" content="width=device-width" />
 </head>
 <body>
-<%= yield %>
+  <%= yield %>
+    <script>
+    $(document).ready(function(){
+        $("#dropdown").hide();
+        $('#showHideLink').click(function(){
+        
+        if (!$("#dropdown").is(":visible"))
+          $('#showHideLink, #mainNav').addClass("catMenuOpen");
+        
+            $("#dropdown").slideToggle(function() { 
+          if (!$("#dropdown").is(":visible"))
+            $('#showHideLink, #mainNav').removeClass("catMenuOpen");
+            });
+        });
+    });
+</script>
 </body>
 </html>

@@ -1,3 +1,7 @@
+body {
+  padding: 0;
+  margin: 0;
+}
 
 /**
 //** Site
@@ -36,6 +40,29 @@ p {
 }
 
 /**
+//** dropdown
+//**
+//********************************************************/
+
+#showHideLink {
+  display: inline;
+  background: red;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 70%;
+  margin-top: 10px;
+}
+
+#dropdown {
+  position: none;
+  background: red;
+  width: 100%;
+}
+#dropdown_txt {
+  padding: 0em 2em 1em 2em;
+}
+
+/**
 //** Header
 //**
 //********************************************************/
@@ -63,7 +90,7 @@ html {
 }
 
 #cf4a {
-  z-index: 1;
+  z-index: 0;
   position: absolute;
 }
 
