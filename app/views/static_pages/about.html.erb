@@ -1,17 +1,19 @@
+
 <div id="dropdown">
+<%= link_to "X", about_path, id: "close_dropdown" %>
 	<div id="dropdown_txt">
-	So much <br />
-	Text about these architects ...
+		So much <br />
+		Text about these architects ...
 	</div>
 </div>
-<%= link_to 'Show/Hide', '#', id: 'showHideLink' %>
+<%= link_to 'About', '#', id: 'showHideLink' %>
 
 <%= render 'shared/header' %>
 <%= render 'shared/nav' %>
 
 
 <div class='body_container'>
-<p>
-This is the about page. It may function as a dropdown or be a seperate page depending on how the site develops. 
-</p>
+	<p>
+	This is the about page. It may function as a dropdown or be a seperate page depending on how the site develops. 
+	</p>
 </div>
