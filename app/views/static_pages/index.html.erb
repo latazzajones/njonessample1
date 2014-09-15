@@ -1,12 +1,7 @@
 
-<div id="dropdown">
-<%= link_to "X", root_path, id: "close_dropdown" %>
-	<div id="dropdown_txt">
-		So much <br />
-		Text about these architects ...
-	</div>
-</div>
-<%= link_to 'About', '#', id: 'showHideLink' %>
+<div id="hideShowDiv" class="dropdown">If you click on the "Hide" button, I will disappear.</div>
+<button id="show">Show</button>
+<button id="hide">Hide</button>
 
 <%= render 'shared/header' %>
 
