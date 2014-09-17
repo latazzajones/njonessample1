@@ -1,7 +1,7 @@
 class StaticPagesController < ApplicationController
   
   def index
-    @images = Dir.glob("app/assets/images/index/*.jpg")
+    @images = Dir.glob("app/assets/images/index/*.jpg").sort_by {rand}
   end
 
   def about 
