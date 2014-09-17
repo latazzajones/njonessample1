@@ -1,6 +1,7 @@
 class StaticPagesController < ApplicationController
   
   def index
+    @images = Dir.glob("app/assets/images/index/*.jpg")
   end
 
   def about 

@@ -35,13 +35,9 @@ info@nemestudio.com metesonmez@nemestudio.com neyranturan@nemestudio.comIlis
 <%= render 'shared/header' %>
 
 	<div id="slideshow">
-		<div> 
-		<%= image_tag('index/001.jpg', alt: "")%>
-		</div>
-		<div> 
-		<%= image_tag('index/002.jpg', alt: "")%>
-		</div>
-		<div> 
-		<%= image_tag('index/003.jpg', alt: "")%>
-		</div>
+	 <% @images.each do |image| %>
+	 	<div>
+   		<%= image_tag "index/#{image.split('/').last}" %>
+   		</div>
+ 	 <% end %>
     </div>
