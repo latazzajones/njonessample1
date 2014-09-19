@@ -1,22 +1,21 @@
+
+@font-face {
+    font-family: 'UniversLTStd';
+    src: font-url('UniversLTStd.otf');
+    src: font-url('UniversLTStd.otf?#iefix') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
 body {
   padding: 0;
   margin: 0;
+  font-family: 'UniversLTStd';
 }
 
 /**
 //** Site
 //**
 //********************************************************/
-.body_container {
-  text-align: center;
-  margin: auto;
-  float: left;
-  width: 800px;
-  padding: 5px;
-  margin-left: 10%;
-  margin-top: 200px;
-  border: 3px solid lime;
-}
 .wrapper {
     margin-left:auto;
     margin-right:auto;
@@ -49,16 +48,32 @@ p {
   width: 14em;
   padding: 2em;
 }
+
+button {
+  border: 0;
+}
+button:focus {
+  outline:0;
+}
 #show {
   z-index: 5;
   position: absolute;
   display: inline;
-  background: red;
+  background: #fff;
   margin-top: 10px;
   padding: 5px;
   border-radius: 5px;
   margin-left: 90%;
   margin-top: 10px;
+  background: transparent;
+}
+#hide {
+  z-index: 5;
+  position: absolute;
+  margin-left: 91%;
+  background: #000;
+  color: #fff;
+  font-size: 3em;
 }
 
 .dropdown {
@@ -66,18 +81,14 @@ p {
   z-index: 6;
   position: relative;
   position: none;
-  background: red;
+  background: #000;
+  color: #fff;
   width: 100%;
 }
 #dropdown_txt {
   padding: 0em 2em 1em 2em;
 }
 
-#hide {
-  z-index: 5;
-  position: absolute;
-  margin-left: 50%;
-}
 
 /**
 //** Header
@@ -132,9 +143,4 @@ html {
   left: 0;
 }
 
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
-  #slideshow img  {
-    left: 50%;
-    margin-left: -512px;   /* 50% */
-  }
-}
+

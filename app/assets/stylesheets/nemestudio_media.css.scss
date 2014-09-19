@@ -3,7 +3,20 @@
 //**
 //********************************************************/
 
-@media screen and (max-device-width: 480px) and (orientation: portrait) { /* for iphone */
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  #slideshow img  {
+    left: 50%;
+    margin-left: -520px;   /* 50% */
+  }
+}
+@media screen and (max-width: 800px) { /* Specific to this particular image */
+  #slideshow img  {
+    left: 50%;
+    margin-left: -530px;   /* 50% */
+  }
+}
+
+@media screen and (max-width: 513px) {
 #header {
   display: inline-block;
   position: fixed;
@@ -14,28 +27,8 @@
    max-width: 300px;
    height: auto;
 }
-nav {
-  position: fixed;
-  padding: 0;
-  margin-right: 11%;
-  margin-left: 11%;
-  margin-top: 30%;
-}
-ul {
-  display: inline-block;
-  text-align: center;
-  list-style: none;
-  float: left;
-  padding: none;
-  width: 100%;
-  margin-top: .5em;
-  margin-bottom: .5em;
-}
-#showHideLink {
-  margin-left: 80%;
-}
 
-#close_dropdown {
+#hide {
   margin-left: 82%;
 }
 .body_container {
@@ -48,7 +41,47 @@ ul {
   margin-top: 100%;
   border: 3px solid lime;
 }
-  #cf4a img {
+  #slideshow img {
+  position: none; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: 80% 0 0 0; 
+  min-width: 100%;
+  min-height: 30%;
+  }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) { /* for iphone */
+#header {
+  display: inline-block;
+  position: fixed;
+  margin-left: 22%;
+  float: left;
+}
+#header img{ 
+   max-width: 300px;
+   height: auto;
+}
+#show {
+  margin-left: 80%;
+}
+
+#hide {
+  margin-left: 82%;
+}
+.body_container {
+  text-align: center;
+  margin: auto;
+  float: left;
+  width: 70%;
+  padding: 5px;
+  margin-left: 15%;
+  margin-top: 100%;
+  border: 3px solid lime;
+}
+  #slideshow img {
   position: none; 
   top: 0; 
   left: 0; 
