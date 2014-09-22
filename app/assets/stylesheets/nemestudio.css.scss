@@ -36,19 +36,32 @@ ul {
   padding: 0px 150px 0px 0px;
 }
 p {
+
 }
 
 /**
 //** dropdown
 //**
 //********************************************************/
-.about_paragraph {
-  display: block;
-  float: left;
-  width: 14em;
-  padding: 2em;
+#text_frame {
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 0;
 }
 
+.about_paragraph {
+  display: block;
+  vertical-align: center;
+  float: left;
+  width: 19em;  
+  margin: .8em;
+  padding: 0em;
+  font-size: .9em;
+}
+.about_paragraph h1 {
+  font-size: .9em;
+  text-align: center;
+}
 button {
   border: 0;
 }
@@ -70,7 +83,9 @@ button:focus {
 #hide {
   z-index: 5;
   position: absolute;
-  margin-left: 91%;
+  display: block;
+  margin-left: 85%;
+  margin-top: 30%;
   background: #000;
   color: #fff;
   font-size: 3em;
