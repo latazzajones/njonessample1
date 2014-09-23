@@ -36,8 +36,12 @@ ul {
   padding: 0px 150px 0px 0px;
 }
 p {
-
+  text-indent: 3em;
 }
+
+p:first-child {
+    text-indent: none;
+  }
 
 /**
 //** dropdown
@@ -84,13 +88,14 @@ button:focus {
   z-index: 5;
   position: absolute;
   display: block;
-  margin-left: 85%;
-  margin-top: 30%;
+  margin-left: 76%;
+  margin-top: 55%;
   background: #000;
   color: #fff;
-  font-size: 3em;
+  img {
+    width: 55%;
+  }
 }
-
 .dropdown {
   display: inline;
   z-index: 6;
