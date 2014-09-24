@@ -12,6 +12,10 @@ body {
   font-family: 'UniversLTStd';
 }
 
+a {
+  color: #fff;
+}
+
 /**
 //** Site
 //**
@@ -36,12 +40,14 @@ ul {
   padding: 0px 150px 0px 0px;
 }
 p {
-  text-indent: 3em;
+  margin: 0em;
 }
-
-p:first-child {
-    text-indent: none;
-  }
+p.i {
+  text-indent: 5em;
+}
+p.margin {
+  margin-top: 1em;
+}
 
 /**
 //** dropdown
@@ -57,9 +63,9 @@ p:first-child {
   display: block;
   vertical-align: center;
   float: left;
-  width: 19em;  
+  width: 18em;  
   margin: .8em;
-  padding: 0em;
+  padding: 1em;
   font-size: .9em;
 }
 .about_paragraph h1 {
